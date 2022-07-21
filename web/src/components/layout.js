@@ -3,6 +3,7 @@ import Header from "./header";
 
 import "../styles/layout.css";
 import * as styles from "./layout.module.css";
+import Search from "atlas-static-site-search-box";
 
 const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
   <>
@@ -12,6 +13,7 @@ const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
       onShowNav={onShowNav}
       showNav={showNav}
     />
+    <Search id="docs-search-cxodi" />
     <div className={styles.content}>{children}</div>
     <footer className={styles.footer}>
       <div className={styles.footerWrapper}>
