@@ -8,10 +8,14 @@ const clientConfig = require("./client-config");
 const isProd = process.env.NODE_ENV === "production";
 
 module.exports = {
+  siteMetadata: {
+    siteUrl: `https://skunkblog.netlify.app`,
+  },
   plugins: [
     "gatsby-plugin-postcss",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-source-sanity",
       options: {
